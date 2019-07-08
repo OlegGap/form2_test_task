@@ -273,6 +273,10 @@ border-radius: 35px;
 }
 @media screen and (max-width: 768px){
    .main-window{
+     display: block;
+     margin-top: 500px;
+     top: 0;
+     left: 50%;
      width: 296px;
      height: 976px;
    }
