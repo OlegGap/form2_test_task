@@ -1,0 +1,307 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img-container{
+  color: red;
+  width: 100px;
+  height: 50px;
+}
+.main-window{
+position: absolute;
+width: 1146px;
+height: 691px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+background: #FFFFFF;
+box-shadow: 0 40px 80px rgba(71, 36, 160, 0.35);
+border-radius: 35px;
+}
+.bg-img{
+  background: linear-gradient(0deg, #12123C, #12123C);
+  position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.main-img{
+  width: 392px;
+  height: 691px;
+  
+  background: url(../img/content-img.jpg);
+  border-radius: 35px 0 0 35px;
+}
+
+.content-container{
+  position: absolute;
+  left: 480px;
+  top: 72px;
+  width: 557px;
+}
+.content-header{
+  display: flex;
+  margin-bottom: 20px;
+}
+.content-header--correct{
+  width: 44px;
+  height: 44px;
+  background: #41C776;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 8px rgba(65, 199, 118, 0.1);
+  margin-top: 5px;
+}
+.content-header> h1{
+  text-align: center;
+  margin-left: 15px;
+  font-family: Circe-Regular;
+  font-size: 60px;
+  line-height: 110%;
+}
+.content-text{
+  height: 145px;
+
+  font-family: Circe-Regular;
+  font-size: 18px;
+  line-height: 128%;
+}
+.content-text > span{
+  font-family: Circe-Bold;
+}
+.form-phone>p{
+  height: 49px;
+
+  font-family: Circe-Regular;
+  font-size: 18px;
+  line-height: 128%;
+  margin-top: 47px;
+}
+.form-phone>p>span{
+  color: #46249F;
+  font-family: Circe-Bold;
+}
+.form-phone input{
+  position: relative;
+  border: none;
+  width: 526px;
+  height: 47px;
+  background: #F2EEFB;
+  border-bottom: 2px solid #46249F;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+
+  margin: 7px 0 21px -5px;
+  font-size: 18px;
+  padding-left: 55px;
+}
+
+.form-checkbox{
+ display: flex;
+ margin-bottom: 22px;
+}
+.checkbox{
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  background: #F2EEFB;
+  border: 1px solid rgba(70, 36, 159, 0.6);
+  box-shadow: inset 4px 4px 20px rgba(0, 0, 0, 0.08);
+}
+.checkbox::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgba(70, 36, 159, 0.6);
+  box-shadow: inset 4px 4px 20px rgba(0, 0, 0, 0.08);
+  background: #F2EEFB;
+  cursor: pointer;
+}
+.checkbox:checked::after{
+  position: absolute;
+  content: '✔';
+  line-height: 18px;
+  font-size: 20px;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(70, 36, 159, 0.6);
+  box-shadow: inset 4px 4px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: .2;
+}
+.form-checkbox p{
+  margin-left: 12px;
+  width: 489px;
+  font-family: PT Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+}
+.form-checkbox p>span{
+  color: #5129B8;
+}
+.form-checkbox-ofert{
+  color: #ccc
+}
+
+.form-button{
+  font-family: Circe-Regular;
+  font-size: 22px;
+  line-height: 128%;
+  text-align: center;
+  letter-spacing: 0.075em;
+  color: #FFFFFF;
+  width: 526px;
+  height: 74px;
+  background: linear-gradient(180deg, rgba(204, 185, 255, 0) -284.46%, rgba(27, 14, 61, 0.2) 88.43%), linear-gradient(191.23deg, #AC2FE6 3.2%, #7918F2 53.61%, #5129B8 90.79%);
+  box-shadow: 0px 8px 40px rgba(137, 32, 238, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+} 
+
+/* dropdown country menu  */
+.dropbtn {
+  display: block;
+  position: absolute;
+  top: -18px;
+  left: 10px;
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 2;
+  padding-top: 5px;
+}
+.dropbtn .ico-country{
+  width: 24px;
+  height: 16px;
+}
+.dropbtn::after{
+  position: absolute;
+  content: '';
+  left: 29px;
+  top: 13px;
+  width: 8px;
+  height: 4px;
+  background: url(https://www.god777.org/mk/isaac/2/img/countries/input-arrow.png) no-repeat center/cover;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  height: 15px;
+  display: none;
+  position: absolute;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.dropdown-content p {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+.dropdown-content .ico-country{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 14px;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.dropdown-content p:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media screen and (max-width: 768px){
+   .main-window{
+     width: 296px;
+     height: 976px;
+   }
+   .main-img{
+    border-radius: 35px 35px 0px 0px;
+    background: url(../img/content-img--320.jpg);
+    width: 296px;
+    height: 227px;
+  }
+  .content-container{
+    left: 14px;
+    top: 195px;
+  }
+  .content-header{
+    flex-direction: column;
+  }
+  .content-header--correct{
+    align-self: center;
+  }
+  .content-header>h1{
+    text-align: left;
+    margin-left: 0;
+    font-size: 44px;
+    line-height: 110%;
+  }
+  .content-container{
+    width: 271px;
+  }
+  .content-text{
+    height: 224px;
+    font-size: 16px;
+    line-height: 128%;
+  }
+  .form-phone >p {
+    height: 73px;
+    font-size: 16px;
+    line-height: 128%;
+    margin-top: 24px;
+  }
+  .form-phone input {
+    width: 260px;
+    height: 47px;
+  }
+  .form-checkbox p{
+    margin-top: 0;
+    width: 227px;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  .form-button{
+    width: 261px;
+    height: 74px;
+  }
+  .content-header h1{
+    margin-top: 20px;
+  }
+}
+
+
+
