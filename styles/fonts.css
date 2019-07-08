@@ -3,11 +3,11 @@
   font-family: "Circe-Bold";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/Circe-Bold.ttf") format("ttf");
+  src: url("../fonts/Circe-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Circe-Regular";
   font-style: normal;
   font-weight: 200;
-  src: url("../fonts/Circe-Regular.ttf") format("ttf");
+  src: url("../fonts/Circe-Regular.ttf") format("truetype");
 }
