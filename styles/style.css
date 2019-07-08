@@ -79,7 +79,7 @@ border-radius: 35px;
 .content-header> h1{
   text-align: center;
   margin-left: 15px;
-  font-family: Circe-Regular;
+  font-family: "Circe-Regular";
   font-size: 60px;
   line-height: 110%;
   margin: 60px 10px 30px 15px;
@@ -87,24 +87,24 @@ border-radius: 35px;
 .content-text{
   height: 145px;
 
-  font-family: Circe-Regular;
+  font-family: "Circe-Regular";
   font-size: 18px;
   line-height: 128%;
 }
 .content-text > span{
-  font-family: Circe-Bold;
+  font-family: "Circe-Bold";
 }
 .form-phone>p{
   height: 49px;
 
-  font-family: Circe-Regular;
+  font-family: "Circe-Regular";
   font-size: 18px;
   line-height: 128%;
   margin-top: 47px;
 }
 .form-phone>p>span{
   color: #46249F;
-  font-family: Circe-Bold;
+  font-family: "Circe-Bold";
 }
 .form-phone input{
   position: relative;
