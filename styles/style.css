@@ -57,6 +57,8 @@ border-radius: 35px;
   display: -ms-flexbox;
   display: flex;
   align-items: center;
+  height: 130px;
+  margin-top: 20px; 
 }
 .content-header--correct{
   width: 44px;
